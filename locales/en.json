@@ -1,0 +1,22 @@
+{
+  "block.table_tools.model.title": "Table Tools",
+  "block.table_tools.model.description": "Normalize JSON or CSV tables, select columns, compare records and join unique keys without modifying source files.",
+  "block.table_tools.advanced": "Advanced settings",
+  "block.table_tools.apply_hint": "Changes remain local until Apply. Restart a loaded Run to use new settings.",
+  "block.table_tools.role": "Table processing",
+  "block.table_tools.error": "Table operation failed: {detail}",
+  "block.table_tools.last_state": "Last result",
+  "block.table_tools.help_operation": "Normalize one table, select columns, or compare/join it with reference.",
+  "block.table_tools.help_keys": "Distinct key columns, e.g. [\"id\"]. Required for comparison and joins.",
+  "block.table_tools.help_columns": "Output columns. An empty array keeps all columns.",
+  "block.table_tools.help_column_types": "Column conversions, e.g. {\"quantity\":\"integer\"}. Types: string, integer, number, boolean, json.",
+  "block.table_tools.help_allowed_root": "CSV read boundary. Empty uses the application directory; relative paths start here.",
+  "block.table_tools.help_delimiter": "One CSV separator character.",
+  "block.table_tools.help_encoding": "Text encoding for CSV files only.",
+  "block.table_tools.help_max_rows": "Maximum rows per input table.",
+  "block.table_tools.help_max_bytes": "Maximum input size in bytes; decoded CSV is checked too.",
+  "block.table_tools.help_reject_invalid_rows": "Off: fail the whole batch. On: report and exclude malformed rows (maximum 1,000 issues).",
+  "block.table_tools.invalid_json": "Enter valid JSON before applying.",
+  "block.table_tools.invalid_number": "Check the numeric value and its limits.",
+  "block.table_tools.saved": "Settings applied."
+}

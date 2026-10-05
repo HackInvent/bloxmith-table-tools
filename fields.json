@@ -1,0 +1,75 @@
+[
+  {
+    "key": "operation",
+    "type": "select",
+    "options": [
+      "normalize",
+      "select",
+      "compare",
+      "inner_join",
+      "left_join"
+    ],
+    "help": "Normalize one table, select columns, or compare/join it with reference."
+  },
+  {
+    "key": "keys",
+    "type": "json",
+    "rows": 2,
+    "help": "Distinct key columns, e.g. [\"id\"]. Required for comparison and joins."
+  },
+  {
+    "key": "columns",
+    "type": "json",
+    "rows": 2,
+    "help": "Output columns. An empty array keeps all columns."
+  },
+  {
+    "key": "column_types",
+    "type": "json",
+    "help": "Column conversions, e.g. {\"quantity\":\"integer\"}. Types: string, integer, number, boolean, json."
+  },
+  {
+    "key": "allowed_root",
+    "type": "directory",
+    "help": "CSV read boundary. Empty uses the application directory; relative paths start here.",
+    "advanced": true
+  },
+  {
+    "key": "delimiter",
+    "help": "One CSV separator character.",
+    "advanced": true
+  },
+  {
+    "key": "encoding",
+    "type": "select",
+    "options": [
+      "utf-8-sig",
+      "utf-8",
+      "latin-1"
+    ],
+    "help": "Text encoding for CSV files only.",
+    "advanced": true
+  },
+  {
+    "key": "max_rows",
+    "type": "integer",
+    "min": 1,
+    "max": 100000,
+    "help": "Maximum rows per input table.",
+    "advanced": true
+  },
+  {
+    "key": "max_bytes",
+    "type": "integer",
+    "min": 1024,
+    "max": 4194304,
+    "help": "Maximum input size in bytes; decoded CSV is checked too.",
+    "advanced": true
+  },
+  {
+    "key": "reject_invalid_rows",
+    "type": "boolean",
+    "help": "Off: fail the whole batch. On: report and exclude malformed rows (maximum 1,000 issues).",
+    "advanced": true
+  }
+]

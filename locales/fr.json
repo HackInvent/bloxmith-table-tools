@@ -1,0 +1,22 @@
+{
+  "block.table_tools.model.title": "Outils de tableaux",
+  "block.table_tools.model.description": "Normalise des tableaux JSON/CSV, sélectionne les colonnes, compare et joint des clés uniques sans modifier les sources.",
+  "block.table_tools.advanced": "Réglages avancés",
+  "block.table_tools.apply_hint": "Modifications locales jusqu’à Appliquer. Redémarrez un Run chargé pour utiliser les nouveaux réglages.",
+  "block.table_tools.role": "Traitement de tableaux",
+  "block.table_tools.error": "Échec du traitement : {detail}",
+  "block.table_tools.last_state": "Dernier résultat",
+  "block.table_tools.help_operation": "Normaliser un tableau, sélectionner des colonnes, le comparer ou le joindre à reference.",
+  "block.table_tools.help_keys": "Colonnes clés distinctes, par exemple [\"id\"]. Obligatoires pour comparer ou joindre.",
+  "block.table_tools.help_columns": "Colonnes de sortie. Un tableau vide conserve toutes les colonnes.",
+  "block.table_tools.help_column_types": "Conversions de colonnes, par exemple {\"quantity\":\"integer\"}. Types : string, integer, number, boolean, json.",
+  "block.table_tools.help_allowed_root": "Répertoire autorisé pour les CSV. Vide : dossier de l’application ; les chemins relatifs partent de cette racine.",
+  "block.table_tools.help_delimiter": "Un caractère séparateur CSV.",
+  "block.table_tools.help_encoding": "Encodage du texte pour les fichiers CSV uniquement.",
+  "block.table_tools.help_max_rows": "Nombre maximal de lignes par tableau en entrée.",
+  "block.table_tools.help_max_bytes": "Taille maximale en octets ; le CSV décodé est également contrôlé.",
+  "block.table_tools.help_reject_invalid_rows": "Désactivé : échec du lot. Activé : signaler et exclure les lignes invalides (1 000 anomalies maximum).",
+  "block.table_tools.invalid_json": "Saisissez un JSON valide avant d’appliquer.",
+  "block.table_tools.invalid_number": "Vérifiez la valeur numérique et ses limites.",
+  "block.table_tools.saved": "Paramètres appliqués."
+}
